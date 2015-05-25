@@ -1,4 +1,4 @@
-# Swiftery
+# Swiftery [![Build Status](https://travis-ci.org/okj579/swiftery.svg?branch=master)](https://travis-ci.org/okj579/swiftery)
 Swiftery is a validator for SWIFT identifiers like IBAN and BIC.
 
 ## Usage
