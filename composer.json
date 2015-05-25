@@ -1,0 +1,23 @@
+{
+    "name": "okj579/swiftery",
+    "description": "Validator for SWIFT identifiers like IBAN and BIC",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Owen Kieffer-Jones",
+            "email": "okj579@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Swifter\\": "src/",
+            "Swifter\\Test\\": "test/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "d11wtq/boris": "~1.0",
+        "phpunit/phpunit": "~4.6",
+        "fzaninotto/faker": "~1.4"
+    }
+}

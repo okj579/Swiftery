@@ -1,0 +1,3 @@
+<?php /** @var \Boris\Boris $boris */
+
+include_once('vendor/autoload.php');
