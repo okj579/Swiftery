@@ -10,8 +10,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Swifter\\": "src/",
-            "Swifter\\Test\\": "test/"
+            "Swiftery\\": "src/",
+            "Swiftery\\Test\\": "test/"
         }
     },
     "require": {},
