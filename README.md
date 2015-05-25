@@ -29,6 +29,9 @@ if ($iban->isValid()) {
     $iban->getBBANParts(); // ['85050300', '3100180568']
 }
 ````
+`getBBANParts()` returns the constituent parts of the national BBAN. For example, a German IBAN would return the routing
+number (BLZ) and account number, while a Brazilian IBAN would return the national bank code, branch code, account
+number, account type, and account owner number. (See [here][Wikipedia] for a list of formats)
 
 The `$configProvider` here provides the checker with country-specific format information. To supply this only once, use
 `IBANFactory`. It can also provide a default implementation:
@@ -38,6 +41,7 @@ $factory = new IBANFactory;
 $iban = $factory->create('DE79850503003100180568');
 ````
 
-This implementation is based on `registry.txt` from the [SWIFT registry][1] with some corrections.
+This implementation is based on `registry.txt` from the [SWIFT registry][SWIFT] with some corrections.
 
-[1]: http://www.swift.com/products_services/bic_and_iban_format_registration_iban_format_r
+[Wikipedia]: https://en.wikipedia.org/wiki/International_Bank_Account_Number#IBAN_formats_by_country
+[SWIFT]: http://www.swift.com/products_services/bic_and_iban_format_registration_iban_format_r
